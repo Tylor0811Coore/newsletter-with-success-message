@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- ============= fav icon =========== -->
+      <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/png">
+      <title>Newsletter Signup with Success Message</title>
+
+      <!-- ============= custom styles ============ -->
+      <link rel="stylesheet" href="./styles.css" type="text/css">
+
+      <!-- ============= custom scripts =========== -->
+      <script defer src="./scripts.js" type="text/javascript"></script>
+   </head>
+   <body class="di-flex">
+      <div class="newsletter container di-flex">
+         <!-- ============= left section ============ -->
+         <div class="newsletter__left-section">
+            <h1 class="newsletter__title">Stay updated!</h1>
+            <p class="newsletter__paragraph">
+               Join 60,000+ product managers receiving monthly updates on:
+            </p>
+            <ul class="newsletter__list di-flex">
+               <li class="newsletter__list-item di-flex">
+                  <img src="./assets/images/icon-list.svg">
+                  <p>Product discovery and building what matters</p>
+               </li>
+               <li class="newsletter__list-item di-flex">
+                  <img src="./assets/images/icon-list.svg">
+                  <p>Measuring to ensure updates are a success</p>
+               </li>
+               <li class="newsletter__list-item di-flex">
+                  <img src="./assets/images/icon-list.svg">
+                  <p>And much more!</p>
+               </li>
+            </ul>
+
+            <!-- ============== form =========== -->
+            <form action="">
+               <div class="newsletter__form-header di-flex">
+                  <label for="email" class="newsletter__form-label">Email address</label>
+                  <p class="newsletter__email-invalid-text">Valid email required</p>
+               </div>
+               <input 
+                  type="email"
+                  class="newsletter__form-email-input"
+                  required
+                  autocomplete="off"
+                  placeholder="email@company.com"
+               >
+               <button type="button" class="btn newsletter__form-submit-btn">
+                  Subscribe to monthly newsletter
+               </button>
+            </form>
+         </div>
+         <!-- ============== right section ============= -->
+         <div class="newsletter__right-section">
+            <img src="./assets/images/illustration-sign-up-desktop.svg" class="newsletter__desktop-img">
+            <img src="./assets/images/illustration-sign-up-mobile.svg" class="newsletter__mobile-img">
+         </div>
+      </div>
+   </body>
+</html>
